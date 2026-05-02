@@ -9,7 +9,7 @@
 
 ---
 
-## 🧩 The Problem
+##  The Problem
 
 Every FEA or CFD simulation begins the same way: an engineer manually reads through
 research papers, material datasheets, or test reports — sometimes 30–80 pages long —
@@ -21,7 +21,7 @@ a single simulation is set up.
 
 ---
 
-## 💡 The Solution
+##  The Solution
 
 **SimSpec Extractor** uses Google Gemini 2.5 Flash as an intelligent mechanical systems
 expert. You upload a PDF. It returns a fully structured JSON object containing every
@@ -32,7 +32,7 @@ What took hours now takes **under 30 seconds**.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────┐
@@ -65,7 +65,7 @@ What took hours now takes **under 30 seconds**.
 
 ---
 
-## 📦 Output Schema
+##  Output Schema
 
 Every extraction returns a consistent, machine-readable JSON object:
 
@@ -93,7 +93,7 @@ ANSYS APDL, Abaqus input decks, or OpenFOAM `0/` boundary files.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -122,7 +122,7 @@ Enter your API key in the sidebar, upload a PDF, and hit **Extract Parameters**.
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 ```
 streamlit>=1.32.0
@@ -145,7 +145,7 @@ pdfplumber>=0.10.0
 
 ---
 
-## 🧠 Engineering Design Decisions
+##  Engineering Design Decisions
 
 ### Why a specialized System Prompt?
 LLMs are generalists. An unguided model extracts text; a domain-prompted model
@@ -170,7 +170,7 @@ on the AI pipeline and extraction logic.
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] **Batch processing** — Upload multiple PDFs, get a merged parameter table
 - [ ] **ANSYS script export** — Auto-generate APDL commands from extracted BCs
@@ -180,7 +180,7 @@ on the AI pipeline and extraction logic.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **[Your Name]**
 B.Tech Mechanical Engineering — MIT Manipal (6th Semester)
